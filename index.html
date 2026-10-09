@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集 | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🧑‍💻 陈依风的作品集</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#about">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-avatar">👨‍🎓</div>
+            <h1 class="hero-title">你好，我是 <span class="highlight">陈依风</span></h1>
+            <p class="hero-subtitle">Web开发技术课程作品集 | 学号 2435040136</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#about" class="btn btn-outline">关于我</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- 作品展示 -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">我的作品</h2>
+                <p class="section-subtitle">Web开发技术课程项目展示</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- 项目1：注册页 -->
+                <div class="project-card" data-project="register">
+                    <div class="project-image">
+                        <img src="images/register-page.png" alt="注册页" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-emoji" style="display:none;">📝</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">第一次课</div>
+                        <h3 class="project-title">注册页</h3>
+                        <p class="project-desc">基于HTML/CSS/JS实现的用户注册页面，包含完整表单验证、密码显示切换、响应式设计。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://register-page-kappa-woad.vercel.app/" target="_blank" class="project-link">
+                                🌐 在线预览
+                            </a>
+                            <a href="https://github.com/CYFeng2006/register-page" target="_blank" class="project-link">
+                                💻 源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目2：Quiz Game -->
+                <div class="project-card" data-project="quiz">
+                    <div class="project-image">
+                        <img src="images/quiz-game.png" alt="Quiz Game" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-emoji" style="display:none;">🧠</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">第二次课</div>
+                        <h3 class="project-title">知识问答游戏</h3>
+                        <p class="project-desc">趣味问答游戏，包含10道前端知识题，支持即时反馈、进度条、得分统计和键盘快捷键。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://quiz-game-liard-xi.vercel.app/" target="_blank" class="project-link">
+                                🌐 在线预览
+                            </a>
+                            <a href="https://github.com/CYFeng2006/quiz-game" target="_blank" class="project-link">
+                                💻 源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目3：菜单搜索器 -->
+                <div class="project-card" data-project="menu">
+                    <div class="project-image">
+                        <img src="images/menu-search.png" alt="菜单搜索器" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-emoji" style="display:none;">🍽️</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tag">第二次课作业</div>
+                        <h3 class="project-title">菜单搜索器</h3>
+                        <p class="project-desc">实时菜单搜索应用，支持关键词搜索、分类筛选、搜索结果高亮和响应式布局。</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://menu-search-psi.vercel.app/" target="_blank" class="project-link">
+                                🌐 在线预览
+                            </a>
+                            <a href="https://github.com/CYFeng2006/menu-search" target="_blank" class="project-link">
+                                💻 源码
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">热爱编程，正在学习Web开发</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>你好！👋</h3>
+                    <p>我是陈依风，一名热爱编程的学生。正在学习Web开发技术课程，探索前端开发的乐趣。</p>
+                    <p>这个页面展示了我在课程中完成的项目作品，每一个项目都让我学到了新的知识和技能。</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">完成项目</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">技术栈</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">学习热情</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>💡 技能</h3>
+                    <div class="skill-item">
+                        <span>HTML5</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS3</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Git / GitHub</span>
+                        <div class="skill-bar"><div class="skill-fill" style="width: 65%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 陈依风 | Web开发技术课程作品集</p>
+            <p>学号：2435040136</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top" id="backToTop" title="返回顶部">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
